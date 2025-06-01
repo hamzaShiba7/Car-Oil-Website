@@ -1,6 +1,6 @@
 :root {
-    --primary-color: #332941;
-    --secondry-color: #3B3486;
+    --primary-color: grey;
+    --secondry-color: orange;
     --text-color: #F8E559;
 }
 
@@ -89,12 +89,18 @@ header img:hover {
     margin-top: 70px;
     width: 100%;
     opacity: 0.8;
+    margin-bottom: 70px;
 }
 
 .display img {
     height: 400px;
     width: 800px;
     border-radius: 30px;
+    transition: all 0.3s ease;
+}
+
+.display img:hover {
+    opacity: 0.5;
 }
 
 .display-text {
@@ -142,4 +148,18 @@ header img:hover {
     position: relative;
     left: 10%;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 200px;
+    width: 100%;
+    border-radius: 50px 50px 0px 0px;
+    padding: 0;
+    margin: 0;
+    background-color: var(--secondry-color);
+    margin-top: 70px;
 }
