@@ -1,7 +1,8 @@
 :root {
     --primary-color: grey;
-    --secondry-color: orange;
-    --text-color: #F8E559;
+    --secondry-color: yellow;
+    --alternate-color: orange;
+    --text-color: #ff1534;
 }
 
 body {
@@ -46,10 +47,16 @@ header img:hover {
     gap: 50px;
 }
 
+.logo-and-name a {
+    text-decoration: none;
+    padding: 0;
+}
+
 .logo-and-name h1 {
     color: var(--text-color);
     position: relative;
     margin-top: 50px;
+
 }
 
 .links {
@@ -97,10 +104,7 @@ header img:hover {
     width: 800px;
     border-radius: 30px;
     transition: all 0.3s ease;
-}
-
-.display img:hover {
-    opacity: 0.5;
+    cursor: pointer;
 }
 
 .display-text {
@@ -119,10 +123,11 @@ header img:hover {
     border-radius: 50px;
     transition: all 0.3s ease;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
 }
 
 .display-text:hover {
-    background-color: var(--primary-color);
+    background-color: var(--alternate-color);
     transform: translateY(-3px);
 }
 
@@ -150,11 +155,65 @@ header img:hover {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
-footer {
+.items {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    gap: 50px;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s ease;
+    padding: 15px;
+    border-radius: 30px;
+}
+
+
+.item img {
+    height: 210px;
+    width: 200px;
+    border-radius: 30px;
+}
+
+.item p {
+    font-size: 18px;
+    font-family:"Roboto Mono", serif;
+    color: var(--text-color);
+    text-align: center;
+}
+
+.item a {
+    text-decoration: none;
+}
+
+.item:hover {
+    background-color: var(--alternate-color);
+    transform: translateY(-3px);
+
+}
+
+.see-more {
+    margin-left: 20px;
+    text-align: center;
+    font-family: "Roboto", serif;
+    font-size: 20px;
+    background-color: var(--primary-color);
+    border-radius: 40px;
+    padding: 15px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.see-more:hover {
+    background-color: var(--alternate-color);
+    transform: translateY(-3px);
+}
+
+footer {
+    display: grid;
+    columns: 40px 3 ;
     height: 200px;
     width: 100%;
     border-radius: 50px 50px 0px 0px;
